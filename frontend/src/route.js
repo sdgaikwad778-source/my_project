@@ -14,6 +14,7 @@ import MainNav from "./pages/components/MainNav";
 import CategoryBar from "./pages/components/CategoryBar";
 import MainSlider from "./pages/components/MainSlider";
 import ProductSection from "./pages/components/ProductSection";
+import ProductDetailPage from "./pages/ProductDetailPage";
 
 const router =createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router =createBrowserRouter([
     {
     path:"/signin",
     element:<SignIn/>
+    },
+    {
+      path:"/product/details/:id",
+      element:<ProductDetailPage/>
     },
     {
       path:"/admin/dashboard",

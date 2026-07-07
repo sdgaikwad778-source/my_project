@@ -11,8 +11,8 @@ function CategoryBar() {
 
     return (
         <section className="bg-light">
-            <div className="container">
-                <div className="row">
+            <div className="container" style={{height:"200px", overflow:"hidden"}}>
+                <div className="row h-100" style={{overflow:"scroll"}}>
                     {product.map((p) => (
                         <div className="col-3 g-3">
                             <div className="card p-3">
