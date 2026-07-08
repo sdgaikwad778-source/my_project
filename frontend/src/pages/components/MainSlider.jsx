@@ -7,7 +7,7 @@ function MainSlider()
                 <div id="carouselExample" class="carousel slide" style={{height:"70vh",overflow:"hidden"}}>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHNMaTf8GeB3hKscuQxWDpjhL2fPZx2jjxIIsOa4G4C-Pgs6rlt_xf-LRL&s=10" class="d-block w-100" alt="..."/>
+                        <img src="https://www.bharathelectronics.in/uploads/products/78A-VZQLX43UHQG5AV.png" class="d-block w-100" alt="..."/>
                     </div>
                     <div class="carousel-item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRi9dSVJwq39Y4YCMS6Q0phVnHsoqJUWHD97j_bpMlbScmQx5ilEYQ3Sw&s=10" class="d-block w-100" alt="..."/>

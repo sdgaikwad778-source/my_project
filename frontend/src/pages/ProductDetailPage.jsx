@@ -8,8 +8,8 @@ function ProductDetailPage() {
   useEffect(() => {
     fetch('https://dummyjson.com/products/' + id)
       .then(res => res.json())
-      .then(data => {
-        setProduct(data); 
+      .then(res => {
+        setProduct(res); 
       })
   }, []); 
 
@@ -17,23 +17,33 @@ function ProductDetailPage() {
 
   return (
     <>
-      <div className="container mt-5 bg-light">
+     <div className="container mt-5">
         <div className="row">
-             <div className="col-6">
-            <img src={product.images} alt={product.title} className="img-fluid" />
-          </div>
-          <div className="col-6 d-flex flex-column justify-content-center align-items-center">
-             <h3>{product.title}</h3>
-            <p className="text-center ">{product.description}</p>
-            <div className="d-flex justify-content-between w-75">
-                <button className="btn btn-success w-50 me-3">{product.price}</button>
-                <button className="btn btn-success w-50 ">{product.rating}</button>
+            <div className="col-6">
+                {
+                    product?.images?.map(img =>(
+                        <img src={img} alt="" className="img-fluid"/>
+                    ))
+                }
             </div>
-            <label htmlFor="">Brand</label>
-            <p className="mt-3">{product.brand}</p>
-          </div>
-         </div>
-      </div>
+            <div className="col-6">
+              {
+                product?.reviews?.map(r =>(
+                   <div className=" border-bottom p-3">
+                     <p>{r.reviewerName}</p>
+                     <p>{r.reviewerEmail}</p>
+                     <p>{
+                       Array.from({length:r.rating}).map(n =>(
+                            <span><i class="bi bi-star"></i></span>
+                        ))
+                        }
+                        </p>
+                   </div>
+                ))
+              }
+            </div>
+        </div>
+     </div>
     </>
   );
 }
