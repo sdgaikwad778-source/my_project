@@ -1,0 +1,21 @@
+.scroll-container{
+    display: flex;
+    overflow-x:auto;
+    gap: 1rem;
+}
+
+.productcard{
+    border: 1px solid slategray;
+    /* width: 18rem; */
+    flex:0 0 250px;
+    text-align: center;
+
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.productcard img{
+    width: 200px;
+}
