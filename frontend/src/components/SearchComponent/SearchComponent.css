@@ -1,0 +1,24 @@
+.search-container {
+    width: 500px;
+}
+
+.search-container select,
+.search-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.search-container ul {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+.search-container li {
+    border-bottom: 1px solid #eee;
+}
+
+.search-container li:last-child {
+    border-bottom: none;
+}
