@@ -1,14 +1,15 @@
+import NavBar from "../components/NavBar/NavBar";
 import ImageCarousel from "../components/ImageCarouselLarge/ImageCarousel";
-import Navbar from "../components/NavBar/NavBar";
-import ProductSlider from "../components/ProductSlider/ProductSlider";
-
-
+import ImageGallery from "../components/ImageGallery/ImageGallery";
+import ProductSection from "../components/ProductSection/ProductSection";
+import SearchComponent from "../components/SearchComponent/SearchComponent";
 const HomePage = () => {
     return ( 
         <>
-          <Navbar/>  
-          <ImageCarousel/>
-          <ProductSlider/>
+              <NavBar />
+      <ImageCarousel />
+      <ImageGallery />
+      <ProductSection />
         </> 
         
     );

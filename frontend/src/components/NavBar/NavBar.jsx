@@ -1,26 +1,27 @@
 import SearchComponent from "../SearchComponent/SearchComponent";
+import "./navbar.css"
 
-function Navbar() {
-  return (
-    <nav className="container-fluid px-1 py-0 border-bottom">
-      <div className="row align-items-center">
-
-        <div className="col-2">
-          <h2 className="ms-2">ShopKart</h2>
+const Navbar = () => {
+    return ( 
+        <nav className="nav-container">
+         <div className="">
+            <div className="row align-items-center">
+                <div className="col-2">
+                    <h4>Shopkart</h4>
+                </div>
+                <div className="col-6">
+                    <SearchComponent/>
+                </div>
+                <div className="col-4">
+                    <ul className="list-unstyled d-flex fs-2 justify-content-end">
+                        <li className="me-5"><i class="bi bi-cart4 "></i></li>
+                        <li className="me-3"><i class="bi bi-person-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div className="col-8">
-          <SearchComponent />
-        </div>
-
-        <div className="col-2 text-end">
-          <i className="bi bi-cart3 fs-3 me-3"></i>
-          <i className="bi bi-person-circle fs-3"></i>
-        </div>
-
-      </div>
-    </nav>
-  );
+        </nav>
+     );
 }
-
+ 
 export default Navbar;
